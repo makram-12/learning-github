@@ -1,1 +1,3 @@
 Some notes about Git
+
+sign-up successfully
