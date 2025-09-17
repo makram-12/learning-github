@@ -1,0 +1,58 @@
+1
+-  mkdir git-practice
+-  git init 
+-  git config user.name "Mohamed Makram"
+-  git config user.email "ma4501146@gmail.com"
+
+2
+-  echo "Hello Git" > hello.txt
+-  git add hello.txt
+-  git commit -m "Add hello.txt"
+
+3
+-  echo "Learning Git is fun." >> hello.txt
+-  git commit -m "Update hello.txt with learning message"
+4
+-  echo "Some notes about Git" > notes.txt
+-  git status
+-  git add notes.txt
+-  git commit -m "Add notes.txt"
+5
+-  mkdir data
+-  echo "Some info about Git" > data/info.txt
+-  git add data/info.txt
+-  git commit -m "Add data/info.txt"
+-  rm data/info.txt
+-  git rm data/info.txt
+-  git commit -m "Remove data/info.txt"
+-  git checkout HEAD^ -- data/info.txt
+-  git add data/info.txt
+-  git commit -m "Restore data/info.txt"
+6
+-  git log --oneline
+-  git checkout 6bd6228
+-  git checkout master
+7
+-  git checkout -b feature-1
+-  echo "This is feature-1." >> hello.txt
+-  git add hello.txt
+-  git commit -m "Add feature-1 line in hello.txt"
+-  git checkout main
+-  cat hello.txt
+8
+-  git log --oneline
+-  git checkout 6bd6228
+-  git checkout -b experiment
+-  echo "This is an experiment file." > exp.txt
+-  git add exp.txt
+-  git commit -m "Add exp.txt in experiment branch"
+-  git checkout master
+9
+-  echo "Adding some temporary notes." >> notes.txt
+-  git restore notes.txt
+-  echo "Another update to notes.txt" >> notes.txt
+-  git add notes.txt
+-  git restore --staged notes.txt
+
+
+
